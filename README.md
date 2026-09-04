@@ -1,10 +1,29 @@
-# Shadowing Studio privacy website (local draft)
+# Shadowing Studio 隐私网页：本地上传版
 
-Developer: Lyra / Lyra-ruolan. This directory contains only public-policy pages and a support template.
+开发者：Lyra / Lyra-ruolan。中英文页面已整理为可上传版本，最后更新日期统一为 2026 年 9 月 4 日；这不是网站上线日期。
 
-**Not deployed. No repository or Issues support channel was created during this task.**
-Open index.html locally for English, zh.html for Chinese. No build, npm install, backend or external assets are required.
+## 上传哪些文件
 
-Future destination (unverified): Lyra-ruolan/shadowing-studio-site.
-Before deployment: review the policy, set its effective date, enable Issues, turn the planned support address into a verified link in both languages, and remove all local-draft notices. Do not upload the extension source, release ZIP, compliance drafts or private files.
-Deployment instructions are in the parent compliance/github-pages-later.md file.
+将下列四个文件直接放到 GitHub 仓库 `shadowing-studio-site` 的根目录，不要再套一层 privacy-site 文件夹：
+
+- `index.html`：英文隐私政策与默认入口。
+- `zh.html`：中文隐私政策。
+- `style.css`：两种语言共用的样式。
+- `.nojekyll`：空文件，保留原名和开头的点。
+
+四个文件应处于同一目录。无需构建、安装依赖或添加外部资源。双击 index.html 或 zh.html 可本地预览。
+
+可选上传：本 README，以及 `.github/ISSUE_TEMPLATE` 内的支持模板（需保留目录结构）。它们不是网页运行所必需的文件。
+
+不要上传父目录、插件源码、安装包、申请材料、日志或私人文件。
+
+## 当前状态与上传后检查
+
+- 本地上传版已准备：日期、可点击支持链接、中英文切换均已设置，无需再手动清理页面文案。
+- 本次没有创建仓库、启用 Issues、上传或部署；网站及支持链接的公开可用性尚未验证。
+- 目标仓库：`Lyra-ruolan/shadowing-studio-site`。页面中的支持链接指向该仓库的 Issues；请在仓库创建并启用 Issues 后验证。
+- 若使用不同账号或仓库名，请同步修改两种语言页面的支持链接。
+- 上传后应在未登录状态下验证英文、中文、样式和支持链接，再将公开隐私地址填入商店。
+- 公开 Issues 不适合敏感信息；不提供私密支持渠道，不要上传私人邮箱或凭据。
+
+完整上传流程见材料目录的 `compliance/github-pages-later.md`（该说明不需要上传）。
